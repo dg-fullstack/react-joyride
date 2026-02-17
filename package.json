@@ -1,16 +1,16 @@
 {
-  "name": "react-joyride",
+  "name": "@star/react-joyride",
   "version": "2.9.3",
-  "description": "Create guided tours for your apps",
-  "author": "Gil Barbara <gilbarbara@gmail.com>",
+  "description": "Create guided tours for your apps (React 19 compatible fork)",
+  "author": "Star <star.fullstack@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gilbarbara/react-joyride.git"
+    "url": "git+https://github.com/dg-fullstack/react-joyride.git"
   },
   "bugs": {
-    "url": "https://github.com/gilbarbara/react-joyride/issues"
+    "url": "https://github.com/dg-fullstack/react-joyride/issues"
   },
-  "homepage": "https://react-joyride.com/",
+  "homepage": "https://github.com/dg-fullstack/react-joyride",
   "keywords": [
     "react",
     "react-component",
