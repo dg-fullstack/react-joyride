@@ -19,12 +19,12 @@ import {
 
 const baseObject = { a: 1, b: '', c: [1], d: { a: null }, e: undefined };
 
-function Skip() {
-  return <strong data-test-id="skip-label">Do you really want to skip?</strong>;
-}
-
 function NextWithProgress() {
   return <strong data-test-id="next-label">{`Go ({step} of {steps})`}</strong>;
+}
+
+function Skip() {
+  return <strong data-test-id="skip-label">Do you really want to skip?</strong>;
 }
 
 describe('helpers', () => {
@@ -351,7 +351,7 @@ describe('helpers', () => {
 
     it('should throw for bad inputs', () => {
       // @ts-expect-error - invalid value
-      expect(() => omit(['a'])).toThrow('Expected an object');
+      expect(() => omit(['a'])).toThrowError('Expected an object');
     });
   });
 
@@ -373,7 +373,7 @@ describe('helpers', () => {
 
     it('should throw for bad inputs', () => {
       // @ts-expect-error - invalid value
-      expect(() => pick(['a'])).toThrow('Expected an object');
+      expect(() => pick(['a'])).toThrowError('Expected an object');
     });
   });
 

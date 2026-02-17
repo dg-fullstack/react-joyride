@@ -1,9 +1,14 @@
+import { resolve } from 'path';
 import react from '@vitejs/plugin-react-swc';
-import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
-  plugins: [tsconfigPaths(), react()],
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '~': resolve(__dirname, './src'),
+    },
+  },
   test: {
     include: ['test/**/*.spec.ts?(x)'],
     coverage: {

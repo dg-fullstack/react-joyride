@@ -48,7 +48,7 @@ describe('modules/scope', () => {
       expect(() => {
         // @ts-expect-error Testing invalid parameters
         scope = new Scope();
-      }).toThrow();
+      }).toThrowError();
     });
 
     it('should not have created an instance', () => {

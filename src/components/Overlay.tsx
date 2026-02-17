@@ -1,6 +1,7 @@
 import * as React from 'react';
 import treeChanges from 'tree-changes';
 
+import { LIFECYCLE } from '~/literals';
 import {
   getClientRect,
   getDocumentHeight,
@@ -12,23 +13,21 @@ import {
 } from '~/modules/dom';
 import { getBrowser, isLegacy, log } from '~/modules/helpers';
 
-import { LIFECYCLE } from '~/literals';
-
 import { Lifecycle, OverlayProps } from '~/types';
 
 import Spotlight from './Spotlight';
-
-interface State {
-  isScrolling: boolean;
-  mouseOverSpotlight: boolean;
-  showSpotlight: boolean;
-}
 
 interface SpotlightStyles extends React.CSSProperties {
   height: number;
   left: number;
   top: number;
   width: number;
+}
+
+interface State {
+  isScrolling: boolean;
+  mouseOverSpotlight: boolean;
+  showSpotlight: boolean;
 }
 
 export default class JoyrideOverlay extends React.Component<OverlayProps, State> {

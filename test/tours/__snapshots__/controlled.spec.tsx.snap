@@ -61,7 +61,7 @@ exports[`Joyride > Controlled > should have rendered the STEP 2 Tooltip 1`] = `
           style="align-items: center; display: flex; justify-content: flex-end; margin-top: 12px;"
         >
           <div
-            style="display: flex; flex: 1;"
+            style="display: flex; flex: 1 1 0%;"
           >
             <button
               aria-label="Skip"
@@ -202,7 +202,7 @@ exports[`Joyride > Controlled > should have rendered the STEP 3 Tooltip 1`] = `
           style="align-items: center; display: flex; justify-content: flex-end; margin-top: 12px;"
         >
           <div
-            style="display: flex; flex: 1;"
+            style="display: flex; flex: 1 1 0%;"
           >
             <button
               aria-label="Skip"
@@ -343,7 +343,7 @@ exports[`Joyride > Controlled > should have rendered the STEP 3 Tooltip AGAIN 1`
           style="align-items: center; display: flex; justify-content: flex-end; margin-top: 12px;"
         >
           <div
-            style="display: flex; flex: 1;"
+            style="display: flex; flex: 1 1 0%;"
           >
             <button
               aria-label="Skip"
@@ -486,7 +486,7 @@ exports[`Joyride > Controlled > should have rendered the STEP 4 Tooltip 1`] = `
           style="align-items: center; display: flex; justify-content: flex-end; margin-top: 12px;"
         >
           <div
-            style="display: flex; flex: 1;"
+            style="display: flex; flex: 1 1 0%;"
           >
             <button
               aria-label="Skip"
@@ -629,7 +629,7 @@ exports[`Joyride > Controlled > should have rendered the STEP 4 Tooltip AGAIN 1`
           style="align-items: center; display: flex; justify-content: flex-end; margin-top: 12px;"
         >
           <div
-            style="display: flex; flex: 1;"
+            style="display: flex; flex: 1 1 0%;"
           >
             <button
               aria-label="Skip"
@@ -786,7 +786,7 @@ exports[`Joyride > Controlled > should have rendered the STEP 5 Tooltip 1`] = `
           style="align-items: center; display: flex; justify-content: flex-end; margin-top: 12px;"
         >
           <div
-            style="display: flex; flex: 1;"
+            style="display: flex; flex: 1 1 0%;"
           >
             <button
               aria-label="Skip"
@@ -1140,7 +1140,7 @@ exports[`Joyride > Controlled > should start the tour 2`] = `
           style="align-items: center; display: flex; justify-content: flex-end; margin-top: 12px;"
         >
           <div
-            style="display: flex; flex: 1;"
+            style="display: flex; flex: 1 1 0%;"
           >
             <button
               aria-label="Skip"

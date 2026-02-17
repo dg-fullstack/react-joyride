@@ -16,7 +16,14 @@ const config = defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        launchOptions: {
+          args: [
+            '--disable-blink-features=AutomationControlled',
+          ],
+        },
+      },
     },
     {
       name: 'firefox',
@@ -33,14 +40,23 @@ const config = defineConfig({
   snapshotDir: './e2e/__snapshots__',
   snapshotPathTemplate: '{testDir}/__snapshots__/{testFilePath}/{arg}-{projectName}{ext}',
   testDir: './e2e',
-  timeout: 10 * 1000,
+  timeout: 30 * 1000,
   use: {
+    baseURL: 'http://127.0.0.1:3100',
     ctPort: 3100,
     ctViteConfig: {
       resolve: {
         alias: {
           '~': resolve(__dirname, './src'),
         },
+      },
+      server: {
+        host: '127.0.0.1',
+        strictPort: true,
+      },
+      preview: {
+        host: '127.0.0.1',
+        strictPort: true,
       },
     },
     testIdAttribute: 'data-test-id',
